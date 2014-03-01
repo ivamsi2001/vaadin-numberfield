@@ -17,8 +17,5 @@ See [original project page](https://code.google.com/p/numberfield/).
 
 ### Authors
 
-* [Markus Häcker](https://code.google.com/u/mmhaecker/) - author of the NumberField component
-
-### Committers
-
-* [Stefan Endrullis](https://github.com/xylo) - small bug fix
+* [Markus Häcker](https://code.google.com/u/mmhaecker/) - original author of the [NumberField component](https://code.google.com/p/numberfield/)
+* [Stefan Endrullis](https://github.com/xylo) - author of a bug fix contribution
