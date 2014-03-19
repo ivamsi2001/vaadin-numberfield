@@ -10,6 +10,13 @@
 	<version>0.5.3</version>
 	<name>NumberField</name>
 
+	<licenses>
+		<license>
+			<name>Apache License 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+		</license>
+	</licenses>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -121,6 +128,29 @@
 							</excludes>
 						</scanTargetPattern>
 					</scanTargetPatterns>
+				</configuration>
+			</plugin>
+
+			<!-- For creating the jar file -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<index>true</index>
+						<manifest>
+							<addClasspath>false</addClasspath>
+						</manifest>
+						<manifestEntries>
+							<Vaadin-Package-Version>1</Vaadin-Package-Version>
+							<Implementation-Version>${version}</Implementation-Version>
+							<Implementation-Title>${name}</Implementation-Title>
+							<Vaadin-Widgetsets>de.essendi.vaadin.ui.component.numberfield.widgetset.shared.NumberFieldWidgetset</Vaadin-Widgetsets>
+							<Source-Code>https://github.com/xylo/vaadin-numberfield</Source-Code>
+							<License>Apache License 2.0</License>
+						</manifestEntries>
+					</archive>
 				</configuration>
 			</plugin>
 
