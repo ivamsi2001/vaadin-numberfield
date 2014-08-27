@@ -7,7 +7,7 @@
 	<groupId>org.vaadin.addons</groupId>
 	<artifactId>numberfield</artifactId>
 	<packaging>jar</packaging>
-	<version>0.5.3-xylo</version>
+	<version>0.5.4</version>
 	<name>NumberField (fixed)</name>
 
 	<licenses>
@@ -20,7 +20,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<vaadin.version>[6.2,7)</vaadin.version>
+		<vaadin.version>[6.2,6.15)</vaadin.version>
+		<!--<vaadin.version>6.8.13</vaadin.version>-->
 		<gwt.version>2.4.0</gwt.version>
 		<gwt.plugin.version>2.4.0</gwt.plugin.version>
 		<jetty.version>7.4.0.v20110414</jetty.version>
